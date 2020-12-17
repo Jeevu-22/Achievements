@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+ .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#JWW
+{
+    height: 100PX;
+    width: 180PX;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: grey;
+}
+
+.active {
+  background-color:  #FF1493;      
+}
+}
+
+#AA  {
+ color: yellow;
+ font-size: 25PX;
+ font-family: Arial Narrow;
+}
+
+#image  {
+  height: 200PX;
+  width: 200PX;
+}
+</style>
+</head>
+<body bgcolor= "blue">
+<right>
+<img src="Jeevika's web world.jpg" id= "JWW"> <br> <br>
+</right>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a href="https://jeevu-22.github.io/Jeevika/index.html"><i class="fa fa-home"></i>Home</a>
+  <a href="https://jeevu-22.github.io/Favourites/Favourites.html"><i class="fa fa-globe"></i>Favourites</a>
+  <a href="https://jeevu-22.github.io/Hobbies/Hobbies.html"><i class="fa fa-globe"></i>Hobbies</a>
+  <a class="active" href="https://jeevu-22.github.io/Achievements/Achievements.html"><i class="fa fa-globe"></i> Achievements</a>
+</div>
+<font size= "20PX", color= "yellow", face= "Arial Narrow">
+<h4 id= "AA"> Moving on to my achievements. Click on the collapsibles below. </h4>
+</font size= "26PX", color= "yellow", face= "Arial Narrow">
+<button type="button" class="collapsible">Participation in dance events</button>
+<div class="content">
+  <p>I participated in the inter school competition 'Quarantine Khoj' under the dance category. One of my dance videos also got selected for the Aarohan celebrations in school [Aarohan is not a competition].</p>
+</div>
+<button type="button" class="collapsible">Participation in shool house events</button>
+<div class="content">
+  <p>I gave auditions for all the house events. I took part in two 'News Bulletin' activities. I also particpated and won the 1st position in the inter house rewrite history competition. </p>
+</div>
+<button type="button" class="collapsible">Participation in essay writing competition</button>
+<div class="content">
+  <p>I participated in the '4th Global Youth Environmental Essay Competition'.</p>
+</div>
+<button type="button" class="collapsible"> Me as a blogger</button>
+<div class="content">
+  <p> I and my school friend Pritika had started a blog in which we uploaded our poems and articles, but leaving all this aside what I wanted to inform is that our blog has got more than 1 thousand views! It was a great start. It would be really kind of you if you go and check our blog. Link - <a href= "https://poemsbytheduo.blogspot.com/"> https://poemsbytheduo.blogspot.com/ </a> </p>
+</div> <br> <br>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<center>
+<img src="AA2.jpg" id="image"> </center>
+</body>
+</html>
+
+
